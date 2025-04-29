@@ -1,3 +1,54 @@
+:root {
+    --colorOne: #FFFFFF;
+    --colorTwo: #FCFDFF;
+    --colorThree: #EBECF5;
+    --colorFour: #000000;
+    --colorFive: #050505;
+    --colorSix: #1A1A1A;
+    --colorSeven: #27AD75;
+    --colorEight: #FFC300;
+    --colorNine: #0A0B0D;
+    --colorTen: #3C3D3D;
+    --colorEleven: #2D2D2E;
+    --colorTwelve: #F13C54;
+    --colorThirteen: #FF0000;
+    --colorFourteen: #37A42D;
+    --colorFifteen: #F85814;
+}
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('/fonts/HarmonyOS_Sans.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  } 
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/fonts/DMSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }  
+body {
+    background-color: var(--colorFour);
+}
+
+
+
+
+
+
+
+
+
+
  /**Нормализация начало*/
  *,
  ::before,
