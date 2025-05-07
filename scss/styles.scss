@@ -39,7 +39,7 @@
   font-display: swap;
 }
 body {
-  background-color: var(--colorFour);
+  background-color: var(--colorFive);
 }
 .header {
   position: relative;
@@ -101,7 +101,6 @@ body {
           color: var(--colorEight);
         }
       }
-    
       .dropdown {
         position: relative;
         display: inline-block;
@@ -218,6 +217,10 @@ body {
       color: var(--colorOne);
       font-size: 0.9rem;
       white-space: nowrap;
+
+      @media (max-width: 375px) {
+        display: none;
+      }
     }
 
     &__button {
@@ -227,6 +230,10 @@ body {
       min-width: 126px;
       min-height: 28px;
       background-color: var(--colorEight);
+
+      @media (max-width: 375px) {
+        display: none;
+      }
     }
 
     &__iconEarth {
@@ -376,22 +383,76 @@ body {
   width: 100%;
   max-width: 1440px;
 
-  &__left__word {
+  &__left {
     order: 1;
-    color: var(--colorOne);
-    font-family: var(--font-family-base);
-    font-size: 3rem;
-    padding-left: 60px;
-    padding-top: 170px;
 
-  }
-    &__left__but {
+    &__word {
+      order: 1;
+      color: var(--colorOne);
+      font-family: var(--font-family-base);
+      font-size: 3rem;
+      padding-left: 60px;
+      padding-top: 170px;
+
+      @media (max-width: 768px) {
+        order: 2;
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: 2rem;
+      }
+
+      @media (max-width: 375px) {
+        order: 2;
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: 1.5rem;
+      }
+    }
+    &__but {
       min-width: 336px;
       min-height: 56px;
       font-family: var(--font-family-base);
       font-size: 0.9rem;
       margin-left: 20px;
+
+      @media (max-width: 375px) {
+        min-width: 250px;
+        min-height: 46px;
+        font-family: var(--font-family-base);
+        font-size: 0.9rem;
+        margin-left: 50px;
+      }
+
+      &:hover {
+        border: 2px solid var(--colorEight);
+        color: var(--colorEight);
+        background-color: var(--colorFive);
+    }  
+
+      &-sign {
+        background-color: var(--colorEight);
+        min-width: 336px;
+        min-height: 56px;
+        font-family: var(--font-family-base);
+        font-size: 0.9rem;
+        margin-left: 20px;
+
+        @media (max-width: 375px) {
+          min-width: 250px;
+          min-height: 46px;
+          font-family: var(--font-family-base);
+          font-size: 0.9rem;
+          margin-left: 50px;
+        }
+
+        &:hover {
+          border: 2px solid var(--colorEight);
+          color: var(--colorEight);
+          background-color: var(--colorFive);
+      }  
+      }
     }
+  }
   &__right {
     order: 2;
     position: relative;
@@ -403,19 +464,36 @@ body {
       left: 60%;
       min-width: 337px;
       height: auto;
+
+      @media (max-width: 768px) {
+        position: relative;
+        top: 15%;
+        left: 0%;
+      }
     }
   }
   &__ticker {
     order: 3;
     flex: 0 0 100%;
     position: relative;
-    top: 320px;
+    margin-top: 10%;
+
     max-height: 25px;
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
     background-color: var(--colorEight);
     border: 1px solid var(--colorEight);
+    
+    @media (max-width: 768px) {
+      position: relative;
+      margin-top: 20%;
+    }
+
+    @media (max-width: 1090px) {
+      position: relative;
+      margin-top: 20%;
+    }
 
     &__container {
       display: inline-block;
@@ -436,6 +514,52 @@ body {
       }
       100% {
           transform: translateX(-100%);
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    order: 4;
+    margin-left: 10%;
+    margin-top: 5%;
+    gap: 3px 3px;
+
+    @media (max-width:1168px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width:788px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 4%;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-width: 346px;
+      min-height: 151px;
+      color: var(--colorOne);
+      background-color: var(--colorNine);
+      border: 3px solid var(--colorEleven);
+      border-radius: 20px;
+      font-family: var(--font-family-base);
+      padding-left: 20px;
+      padding-top: 40px;
+      font-size: 0.9rem;
+      
+      &-text {
+        color:grey; 
+        font-size: 0.8rem;
+        font-family: var(--font-family-base);
+      }
+      &__foto {
+        position: absolute;
+        top: 5%;
+        left: 65%;
       }
     }
   }
