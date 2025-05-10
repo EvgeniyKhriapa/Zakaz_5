@@ -331,7 +331,6 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    max-height: 380px;
     width: 100%; }
     body .main__left {
       order: 1; }
@@ -951,3 +950,58 @@ body {
         content: "<"; }
       body .main__faq .submenu-toggle:checked + .faq-question + .submenu {
         display: block; }
+  body .footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 100px; }
+    body .footer__logo {
+      order: 13;
+      color: var(--colorOne);
+      font-family: var(--font-family-base);
+      font-size: 1rem; }
+    body .footer__grid {
+      order: 14;
+      display: grid;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      width: 100%; }
+      @media (max-width: 501px) {
+        body .footer__grid {
+          grid-template-columns: repeat(3, 1fr); } }
+      body .footer__grid__m {
+        color: var(--colorOne);
+        font-family: var(--font-family-base);
+        font-size: 1rem;
+        max-width: 240px;
+        max-height: 403px; }
+        @media (max-width: 668px) {
+          body .footer__grid__m {
+            font-size: 0.8rem; } }
+        body .footer__grid__m a {
+          text-decoration: none;
+          color: var(--colorTen);
+          transition: color; }
+          body .footer__grid__m a:hover {
+            color: var(--colorEight); }
+          @media (max-width: 668px) {
+            body .footer__grid__m a {
+              font-size: 0.8rem; } }
+        body .footer__grid__m-modificationButton {
+          max-width: 240px;
+          max-height: 48px;
+          margin-top: 10px;
+          width: 80%;
+          height: auto;
+          border-radius: 5px;
+          background-color: var(--colorOne);
+          border: 1px solid var(--colorOne);
+          transition: background-color, border, color; }
+          body .footer__grid__m-modificationButton:hover {
+            background-color: var(--colorFive);
+            border: 1px solid var(--colorEight);
+            color: var(--colorEight); }
