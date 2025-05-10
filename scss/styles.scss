@@ -1108,12 +1108,12 @@ body {
         }
 
         @media (max-width: 736px) {
-          width: 300px;
+          width: 150px;
           height: auto;
         }
 
         @media (max-width: 480px) {
-          width: 200px;
+          width: 50px;
           height: auto;
         }
       }
@@ -1151,6 +1151,113 @@ body {
         }
         100% {
             transform: translateX(-50%);
+        }
+      }
+    }
+    &__faq {
+      order: 12;
+      width: 100%;
+      margin-top: 50px;
+      padding: 1rem;
+      box-sizing: border-box;
+
+      &__mod {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--colorOne);
+        font-family: var(--font-family-base);
+        font-size: 2rem;
+      
+        &-more {
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: var(--colorOne);
+          transition: color;
+          margin-right: 10px;
+          align-items: center;
+          position: relative;
+
+          &:hover {
+            color: var(--colorEight);
+          }
+
+          &::after {
+            content: ">";
+            position: absolute;
+            top: 0%;
+            left: 120%;
+            width: 10px;
+            aspect-ratio: 1;
+            color: var(--colorOne);
+            transition: color;
+            
+          &::after :hover {
+            color: var(--colorEight);
+          }
+          }
+        }
+      }
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid #333;
+        padding: 0.5rem 0;
+      }
+
+      .submenu-toggle {
+        display: none;
+      }
+
+      .faq-question {
+        display: block;
+        position: relative;
+        padding: 0.5rem 2rem 0.5rem 0;
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--colorOne);
+        font-family: var(--font-family-base);
+        transition: color;
+
+        &:hover {
+          color: var(--colorEight);
+        }
+
+        &::after {
+          content: ">";
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 1.2rem;
+          color: var(--colorOne);
+        }
+      }
+
+      .submenu {
+        list-style: none;
+        padding-left: 1rem;
+        display: none;
+
+        li {
+          margin: 0.3rem 0;
+
+          a {
+            color: var(--colorOne);
+            text-decoration: none;
+          }
+        }
+      }
+
+      .submenu-toggle:checked + .faq-question {
+        &::after {
+          content: "<";
+        }
+
+        + .submenu {
+          display: block;
         }
       }
     }
