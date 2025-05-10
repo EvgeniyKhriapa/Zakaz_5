@@ -1034,6 +1034,7 @@ body {
         font-size: 2.5rem;
         white-space: nowrap;
         color: var(--colorOne);
+        font-family: var(--font-family-base);
 
         @media (max-width: 1081px) {
           font-size: 1.5rem;
@@ -1046,6 +1047,7 @@ body {
 
       & .modification {
         color: var(--colorOne);
+        font-family: var(--font-family-base);
       }
 
       & .button {
@@ -1056,7 +1058,101 @@ body {
         color: var(--colorOne);
         font-size: 1rem;
         margin-top: auto;
+        font-family: var(--font-family-base);
       }
     }
-  } 
+    &__telephone {
+      margin-top: 100px;
+      order: 10;
+      max-height: 672px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: var(--colorSix);
+
+      &__trade {
+        color: var(--colorOne);
+        font-family: var(--font-family-base);
+        font-size: 3.5rem;
+        align-self: center;
+        padding-left: 50px;
+
+        @media (max-width: 1134px) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: 996px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 847px) {
+          font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.9rem;
+        }
+      }
+
+      &__tel {
+
+        @media (max-width: 1134px) {
+          width: 500px;
+          height: auto;
+        }
+
+        @media (max-width: 996px) {
+          width: 400px;
+          height: auto;
+        }
+
+        @media (max-width: 736px) {
+          width: 300px;
+          height: auto;
+        }
+
+        @media (max-width: 480px) {
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+    &__leib {
+      order: 11;
+      flex: 0 0 100%;
+      position: relative;
+      margin-top: 10%;
+      max-height: 128px;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: var(--colorSix);
+
+      &__container {
+        display: inline-flex;
+        align-items: center;
+        animation: ticker 25s linear infinite;
+        
+        &__item {
+          flex: 0 0 auto;
+          margin-right: 100px;
+
+          @media (max-width: 800px) {
+            width: 100px;
+            height: auto;
+          }
+        }
+      }
+      @keyframes ticker {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+      }
+    }
+  }
 }

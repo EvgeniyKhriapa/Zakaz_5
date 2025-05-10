@@ -788,7 +788,8 @@ body {
       body .main__option .word {
         font-size: 2.5rem;
         white-space: nowrap;
-        color: var(--colorOne); }
+        color: var(--colorOne);
+        font-family: var(--font-family-base); }
         @media (max-width: 1081px) {
           body .main__option .word {
             font-size: 1.5rem; } }
@@ -796,7 +797,8 @@ body {
           body .main__option .word {
             font-size: 1rem; } }
       body .main__option .modification {
-        color: var(--colorOne); }
+        color: var(--colorOne);
+        font-family: var(--font-family-base); }
       body .main__option .button {
         display: flex;
         justify-content: flex-start;
@@ -804,4 +806,75 @@ body {
         background-color: var(--colorFive);
         color: var(--colorOne);
         font-size: 1rem;
-        margin-top: auto; }
+        margin-top: auto;
+        font-family: var(--font-family-base); }
+    body .main__telephone {
+      margin-top: 100px;
+      order: 10;
+      max-height: 672px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: var(--colorSix); }
+      body .main__telephone__trade {
+        color: var(--colorOne);
+        font-family: var(--font-family-base);
+        font-size: 3.5rem;
+        align-self: center;
+        padding-left: 50px; }
+        @media (max-width: 1134px) {
+          body .main__telephone__trade {
+            font-size: 2.5rem; } }
+        @media (max-width: 996px) {
+          body .main__telephone__trade {
+            font-size: 1.5rem; } }
+        @media (max-width: 847px) {
+          body .main__telephone__trade {
+            font-size: 1rem; } }
+        @media (max-width: 480px) {
+          body .main__telephone__trade {
+            font-size: 0.9rem; } }
+      @media (max-width: 1134px) {
+        body .main__telephone__tel {
+          width: 500px;
+          height: auto; } }
+      @media (max-width: 996px) {
+        body .main__telephone__tel {
+          width: 400px;
+          height: auto; } }
+      @media (max-width: 736px) {
+        body .main__telephone__tel {
+          width: 300px;
+          height: auto; } }
+      @media (max-width: 480px) {
+        body .main__telephone__tel {
+          width: 200px;
+          height: auto; } }
+    body .main__leib {
+      order: 11;
+      flex: 0 0 100%;
+      position: relative;
+      margin-top: 10%;
+      max-height: 128px;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: var(--colorSix); }
+      body .main__leib__container {
+        display: inline-flex;
+        align-items: center;
+        animation: ticker 25s linear infinite; }
+        body .main__leib__container__item {
+          flex: 0 0 auto;
+          margin-right: 100px; }
+          @media (max-width: 800px) {
+            body .main__leib__container__item {
+              width: 100px;
+              height: auto; } }
+@keyframes ticker {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-50%); } }
