@@ -10,6 +10,10 @@
     <title>Document</title>
   </head>
   <body>
+    <select id="lang-select">
+      <option value="ua">UA</option>
+      <option value="en">EN</option>
+    </select>
     <div class="page-container">
       <header class="header">
         <div class="header__left">
@@ -180,7 +184,7 @@
         </section>
         <section class="main__telephone">
           <div class="main__telephone__trade"><strong>Trade Anywhere</strong> <br><strong>with the ExChange</strong></div>
-          <div class="main__telephone__tel"><img src="./img/telephone.png" alt="telephone" width="600px" height="601px" loading="lazy"></div>
+          <div class="main__telephone__tel"><img src="./img/telephone.png" alt="telephone" width="600px" height="auto" loading="lazy"></div>
         </section>
         <section class="main__leib">
           <div class="main__leib__container">
@@ -245,5 +249,76 @@
         </section>
       </footer>
     </div>
+    <script>
+    const select = document.getElementById('lang-select');
+
+    function loadLang(lang) {
+      fetch(`lang/${lang}.json`)
+        .then(res => {
+          if (!res.ok) throw new Error("Language file not found");
+          return res.json();
+        })
+        .then(data => {
+          document.documentElement.lang = lang;
+
+          // Текст
+          document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.dataset.i18n;
+            if (data[key]) {
+              if (el.tagName === 'TITLE') {
+                document.title = data[key];
+              } else {
+                el.textContent = data[key];
+              }
+            }
+          });
+
+          // placeholder
+          document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.dataset.i18nPlaceholder;
+            if (data[key]) el.placeholder = data[key];
+          });
+
+          // alt
+          document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+            const key = el.dataset.i18nAlt;
+            if (data[key]) el.alt = data[key];
+          });
+
+          // value
+          document.querySelectorAll('[data-i18n-value]').forEach(el => {
+            const key = el.dataset.i18nValue;
+            if (data[key]) el.value = data[key];
+          });
+
+          // href
+          document.querySelectorAll('[data-i18n-href]').forEach(el => {
+            const key = el.dataset.i18nHref;
+            if (data[key]) el.href = data[key];
+          });
+        })
+        .catch(err => console.error('Error loading language file:', err));
+    }
+
+    function detectLang() {
+      const saved = localStorage.getItem('lang');
+      if (saved) return saved;
+
+      const browserLang = navigator.language.slice(0, 2);
+      const supported = ['ua', 'en'];
+      return supported.includes(browserLang) ? browserLang : 'ua';
+    }
+
+    const currentLang = detectLang();
+    select.value = currentLang;
+    loadLang(currentLang);
+    localStorage.setItem('lang', currentLang);
+
+    select.addEventListener('change', () => {
+      const lang = select.value;
+      localStorage.setItem('lang', lang);
+      loadLang(lang);
+    });
+  </script>
   </body>
 </html>
