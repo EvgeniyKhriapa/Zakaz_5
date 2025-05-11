@@ -813,15 +813,17 @@ body {
       max-height: 672px;
       width: 100%;
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
-      background-color: var(--colorSix); }
+      background-color: var(--colorSix);
+      flex-wrap: wrap; }
       body .main__telephone__trade {
         color: var(--colorOne);
         font-family: var(--font-family-base);
         font-size: 3.5rem;
         align-self: center;
-        padding-left: 50px; }
+        padding-left: 50px;
+        min-width: 300px;
+        flex: 1; }
         @media (max-width: 1134px) {
           body .main__telephone__trade {
             font-size: 2.5rem; } }
