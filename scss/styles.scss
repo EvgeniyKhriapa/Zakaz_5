@@ -261,20 +261,34 @@ body {
         }
       }
 
-      &__iconEarth {
-        min-width: 24px;
-        min-height: 24px;
-        transition: transform 0.3 ease;
+      &__lang-selector {
+        position: relative;
 
-        @media (max-width: 463px) {
-          min-width: 15px;
-          min-height: 15px;
-          transition: transform 0.3 ease;
-        }
+        select {
+          font-size: 0.9rem;
+          font-family: var(--font-family-base);
+          background-color: var(--colorEight);
+          color: var(--colorFive);
+          border-radius: 5px;
+          max-width: 70px;
+          max-height: 40px;
+          width: 100%;
+          cursor: pointer;
 
-        &:hover {
-          padding-top: 1px;
-          transform: scale(1.2);
+          &:hover {
+            background-color: var(--colorFive);
+            color: var(--colorEight);
+          }
+
+          option {
+            background-color: var(--colorFive);
+            color: var(--colorEight);
+          }
+
+          @media (max-width: 463px) {
+            font-size: 0.6rem;
+            padding: 5px 8px;
+          }
         }
       }
 
@@ -1057,6 +1071,11 @@ body {
         font-size: 1rem;
         margin-top: auto;
         font-family: var(--font-family-base);
+        transition: color;
+
+        &:hover {
+          color: var(--colorEight);
+        }
       }
     }
     &__telephone {

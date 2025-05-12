@@ -7,13 +7,11 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./_normalize.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./lang/en.json" />
+    <link rel="stylesheet" href="./lang/ua.json" />
+    <title data-i18n="title">My Website</title>
   </head>
   <body>
-    <select id="lang-select">
-      <option value="ua">UA</option>
-      <option value="en">EN</option>
-    </select>
     <div class="page-container">
       <header class="header">
         <div class="header__left">
@@ -27,28 +25,28 @@
             />
           </div>
           <div class="header__left__menu">
-            <div class="header__left__menu--sp">By crypto</div>
-            <div class="header__left__menu--sp">Markets</div>
-            <div class="header__left__menu--sp">Spot</div>
+            <div class="header__left__menu--sp" data-i18n="crypto">By crypto</div>
+            <div class="header__left__menu--sp" data-i18n="markets">Markets</div>
+            <div class="header__left__menu--sp" data-i18n="spot">Spot</div>
             <div class="header__left__menu--sp">
               <div class="dropdown">
-                <button class="dropbtn">Futures</button>
+                <button class="dropbtn" data-i18n="futures">Futures</button>
                 <div class="dropdown-content">
-                  <a class="dropdown-item" href="#">Futures<br><span class="dropdown-content-text">Trade the most tranding futures</span></a>
-                  <a class="dropdown-item" href="#">Trending Bots<br><span class="dropdown-content-text">Let the bots trade for you</span></a>
-                  <a class="dropdown-item" href="#">Demo Trending<br><span class="dropdown-content-text">Explore Unified Trading Account (UTA) here</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="futures">Futures<br><span class="dropdown-content-text" data-i18n="trading">Trade the most tranding futures</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="trbots">Trending Bots<br><span class="dropdown-content-text" data-i18n="bots">Let the bots trade for you</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="demo">Demo Trending<br><span class="dropdown-content-text" data-i18n="uta">Explore Unified Trading Account (UTA) here</span></a>
                 </div>
               </div>
             </div>
-            <div class="header__left__menu--sp">Copy Trading</div>
-            <div class="header__left__menu--sp">Earn</div>
+            <div class="header__left__menu--sp" data-i18n="copy">Copy Trading</div>
+            <div class="header__left__menu--sp" data-i18n="earn">Earn</div>
             <div class="header__left__menu--sp">
               <div class="dropdown">
-                <button class="dropbtn">More</button>
+                <button class="dropbtn" data-i18n="more">More</button>
                 <div class="dropdown-content">
-                  <a class="dropdown-item" href="#">Futures<br><span class="dropdown-content-text">Trade the most tranding futures</span></a>
-                  <a class="dropdown-item" href="#">Trending Bots<br><span class="dropdown-content-text">Let the bots trade for you</span></a>
-                  <a class="dropdown-item" href="#">Demo Trending<br><span class="dropdown-content-text">Explore Unified Trading Account (UTA) here</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="futures">Futures<br><span class="dropdown-content-text" data-i18n="trading">Trade the most tranding futures</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="trbots">Trending Bots<br><span class="dropdown-content-text" data-i18n="bots">Let the bots trade for you</span></a>
+                  <a class="dropdown-item" href="#" data-i18n="demo">Demo Trending<br><span class="dropdown-content-text" data-i18n="uta">Explore Unified Trading Account (UTA) here</span></a>
                 </div>
               </div>
             </div>
@@ -59,26 +57,31 @@
             <div class="dropdowns__displayNone">
               <button class="dropbtns__displayNone">Assets</button>
               <div class="dropdowns-content__displayNone">
-                <a class="dropdowns-item__displayNone" href="#">Futures<br><span class="dropdowns-content__displayNone-text">Trade the most tranding futures</span></a>
-                <a class="dropdowns-item__displayNone" href="#">Trending Bots<br><span class="dropdowns-content__displayNone-text">Let the bots trade for you</span></a>
-                <a class="dropdowns-item__displayNone" href="#">Demo Trending<br><span class="dropdowns-content__displayNone-text">Explore Unified Trading Account (UTA) here</span></a>
+                <a class="dropdowns-item__displayNone" href="#" data-i18n="Futures">Futures<br><span class="dropdowns-content__displayNone-text" data-i18n="trading">Trade the most tranding futures</span></a>
+                <a class="dropdowns-item__displayNone" href="#" data-i18n="trbots">Trending Bots<br><span class="dropdowns-content__displayNone-text" data-i18n="bots">Let the bots trade for you</span></a>
+                <a class="dropdowns-item__displayNone" href="#" data-i18n="demo">Demo Trending<br><span class="dropdowns-content__displayNone-text" data-i18n="uta">Explore Unified Trading Account (UTA) here</span></a>
               </div>
             </div>
           </div>
         </div>
         <div class="header__right">
-          <div class="header__right__login">Login in</div>
-          <div><button class="header__right__button" type="submit">Sign up</button></div>
-          <div class="header__right__iconEarth"><img src="./icons/iconEarth.png" alt="iconEarth" loading="lazy"></div>
+          <div class="header__right__login" data-i18n="login">Login in</div>
+          <div><button class="header__right__button" type="submit" data-i18n="sign">Sign up</button></div>
+          <div class="header__right__lang-selector">
+            <select id="lang-select">
+              <option value="ua">UA</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
           <div class="header__right__iconSun"><img src="./icons/iconSun.png" alt="iconSun" loading="lazy"></div>
         </div>
       </header>
       <main class="main">
         <div class="main__left">
-          <div class="main__left__word"><h1>ExChange - Where &nbsp Whales are Made</h1></div>
+          <div class="main__left__word"><h1 data-i18n="exchange">ExChange - Where &nbsp Whales are Made</h1></div>
           <div class="main__left__button">
-            <button class="main__left__but" type="submit">Log in</button>
-            <button class="main__left__but-sign" type="submit">Sign up</button>
+            <button class="main__left__but" type="submit" data-i18n="login">Log in</button>
+            <button class="main__left__but-sign" type="submit" data-i18n="sign">Sign up</button>
           </div>
         </div>
         <div class="main__right">
@@ -94,37 +97,45 @@
               <span class="main__ticker__container__item">EUR: 41.80 / 42.50</span>
               <span class="main__ticker__container__item">GBP: 48.20 / 49.10</span>
               <span class="main__ticker__container__item">PLN: 9.20 / 9.50</span>
+              <span class="main__ticker__container__item">USD: 38.50 / 39.20</span>
+              <span class="main__ticker__container__item">EUR: 41.80 / 42.50</span>
+              <span class="main__ticker__container__item">GBP: 48.20 / 49.10</span>
+              <span class="main__ticker__container__item">PLN: 9.20 / 9.50</span>
+              <span class="main__ticker__container__item">USD: 38.50 / 39.20</span>
+              <span class="main__ticker__container__item">EUR: 41.80 / 42.50</span>
+              <span class="main__ticker__container__item">GBP: 48.20 / 49.10</span>
+              <span class="main__ticker__container__item">PLN: 9.20 / 9.50</span>
           </div>
         </div>
         <section class="main__grid">
-          <div><a href="#" class="main__grid__item"><strong>Meet and Follow<br>Top Traders</strong><span class="main__grid__item-text">Copy Trading</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="meet">Meet and Follow<br data-i18n="traders">Top Traders</strong><span class="main__grid__item-text" data-i18n="trading">Copy Trading</span>
             <img class="main__grid__item__foto" src="./icons/grid1.png" alt="grid1" width="98px" height="98px" loading="lazy">
           </a></div>
-          <div><a href="#" class="main__grid__item"><strong>Hold to Maximize<br>Top Traders</strong><span class="main__grid__item-text">ExChange Earn</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="hold">Hold to Maximize<br data-i18n="traders">Top Traders</strong><span class="main__grid__item-text" data-i18n="earnex">ExChange Earn</span>
             <img class="main__grid__item__foto" src="./icons/grid2.png" alt="grid2" width="98px" height="98px" loading="lazy">
           </a></div>
-          <div><a href="#" class="main__grid__item"><strong>SEPA Transfer & <br> Card Payment</strong><span class="main__grid__item-text">Buy Crypto</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="sepa">SEPA Transfer & <br data-i18n="payment"> Card Payment</strong><span class="main__grid__item-text" data-i18n="crypto">Buy Crypto</span>
             <img class="main__grid__item__foto" src="./icons/grid3.png" alt="grid3" width="98px" height="98px" loading="lazy">
           </a></div>
-          <div><a href="#" class="main__grid__item"><strong>Hold to Maximize<br>Your Asset</strong><span class="main__grid__item-text">Copy Trading</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="hold">Hold to Maximize<br data-i18n="asset">Your Asset</strong><span class="main__grid__item-text" data-i18n="copy">Copy Trading</span>
             <img class="main__grid__item__foto" src="./icons/grid4.png" alt="grid4" width="98px" height="98px" loading="lazy">
           </a></div>
-          <div><a href="#" class="main__grid__item"><strong>Meet and Follow<br>Your Asset</strong><span class="main__grid__item-text">ExChange Earn</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="meet">Meet and Follow<br data-i18n="asset">Your Asset</strong><span class="main__grid__item-text" data-i18n="earnex">ExChange Earn</span>
             <img class="main__grid__item__foto" src="./icons/grid5.png" alt="grid5" width="98px" height="98px" loading="lazy">
           </a></div>
-          <div><a href="#" class="main__grid__item"><strong>Meet and Follow<br>Your Asset</strong><span class="main__grid__item-text">ExChange Earn</span>
+          <div><a href="#" class="main__grid__item"><strong data-i18n="meet">Meet and Follow<br data-i18n="asset">Your Asset</strong><span class="main__grid__item-text" data-i18n="earnex">ExChange Earn</span>
             <img class="main__grid__item__foto" src="./icons/grid6.png" alt="grid6" width="98px" height="98px" loading="lazy">
           </a></div>
         </section>
         <section class="main__markets">
-            <h2>Markets</h2>
+            <h2 data-i18n="markets">Markets</h2>
             <div class="tabs">
-                <button class="main__markets__tabs__tab">Top</button>
-                <button class="main__markets__tabs__tab">Hot</button>
-                <button class="main__markets__tabs__tab">Gainers</button>
-                <button class="main__markets__tabs__tab">Losers</button>
-                <button class="main__markets__tabs__tab">New</button>
-                <button class="main__markets__tabs-button"><a href="#" class="main__markets__tabs-m">See All Markets</a></button>
+                <button class="main__markets__tabs__tab" data-i18n="top">Top</button>
+                <button class="main__markets__tabs__tab" data-i18n="hot">Hot</button>
+                <button class="main__markets__tabs__tab" data-i18n="gainers">Gainers</button>
+                <button class="main__markets__tabs__tab" data-i18n="losers">Losers</button>
+                <button class="main__markets__tabs__tab" data-i18n="new">New</button>
+                <button class="main__markets__tabs-button"><a href="#" class="main__markets__tabs-m" data-i18n="see">See All Markets</a></button>
                 <hr class="main__markets__tabshr">
             </div>
             <div class="main__markets__table__header">
@@ -166,24 +177,24 @@
                 </div>
             </div>
         </section>
-        <section class="main__exchange"><strong>Why ExChange?</strong></section>
+        <section class="main__exchange"><strong data-i18n="why">Why ExChange?</strong></section>
         <section class="main__gridEx">
-          <div><a class="main__gridEx__option n1" href="#"><strong>Reliable Security</strong></a><span class="main__gridEx__option-modification">Project user founds with Fireblocks security and reral-time motoring</span></div>
-          <div><a class="main__gridEx__option n2" href="#"><strong>Derivates Trading</strong></a><span class="main__gridEx__option-modification">Enjoy spots, copy trading, and API access - all in one platform</span></div>
-          <div><a class="main__gridEx__option n3" href="#"><strong>Stable and Seamless</strong></a><span class="main__gridEx__option-modification">Experience ultra-low latency, fast processing, and stable systems for smooth trading</span></div>
-          <div><a class="main__gridEx__option n4" href="#"><strong>Hight Performance</strong></a><span class="main__gridEx__option-modification">Benefit from deep liquidity and powerful tools for efficient trade execution</span></div>
-          <div><a class="main__gridEx__option n5" href="#"><strong>Minimum commissions</strong></a><span class="main__gridEx__option-modification">Protect user funds with Fireblocks security and Chainalysis real-time monitoring</span></div>
-          <div><a class="main__gridEx__option n6" href="#"><strong>Fast deposits</strong></a><span class="main__gridEx__option-modification">Deposit in 20+ fial currencies Withdrawal without delays Cryptocureency transfers without commissions</span></div>
-          <div><a class="main__gridEx__option n7" href="#"><strong>Highest level of security</strong></a><span class="main__gridEx__option-modification">98% of assets are stored in couid wallets Multi-level security KYC and two-factor authentication (2FA)</span></div>
-          <div><a class="main__gridEx__option n8" href="#"><strong>Smart Trading Tools</strong></a><span class="main__gridEx__option-modification">Deep analytics and charts Automated trading and AI bots API support for PRO traders</span></div>
+          <div><a class="main__gridEx__option n1" href="#"><strong data-i18n="reliable">Reliable Security</strong></a><span class="main__gridEx__option-modification" data-i18n="project">Project user founds with Fireblocks security and reral-time motoring</span></div>
+          <div><a class="main__gridEx__option n2" href="#"><strong data-i18n="derivates">Derivates Trading</strong></a><span class="main__gridEx__option-modification" data-i18n="enjoy">Enjoy spots, copy trading, and API access - all in one platform</span></div>
+          <div><a class="main__gridEx__option n3" href="#"><strong data-i18n="stable">Stable and Seamless</strong></a><span class="main__gridEx__option-modification" data-i18n="experience">Experience ultra-low latency, fast processing, and stable systems for smooth trading</span></div>
+          <div><a class="main__gridEx__option n4" href="#"><strong data-i18n="hight">Hight Performance</strong></a><span class="main__gridEx__option-modification" data-i18n="benefit">Benefit from deep liquidity and powerful tools for efficient trade execution</span></div>
+          <div><a class="main__gridEx__option n5" href="#"><strong data-i18n="minimum">Minimum commissions</strong></a><span class="main__gridEx__option-modification" data-i18n="protect">Protect user funds with Fireblocks security and Chainalysis real-time monitoring</span></div>
+          <div><a class="main__gridEx__option n6" href="#"><strong data-i18n="fast">Fast deposits</strong></a><span class="main__gridEx__option-modification" data-i18n="deposit">Deposit in 20+ fial currencies Withdrawal without delays Cryptocureency transfers without commissions</span></div>
+          <div><a class="main__gridEx__option n7" href="#"><strong data-i18n="highest">Highest level of security</strong></a><span class="main__gridEx__option-modification" data-i18n="98%">98% of assets are stored in couid wallets Multi-level security KYC and two-factor authentication (2FA)</span></div>
+          <div><a class="main__gridEx__option n8" href="#"><strong data-i18n="smart">Smart Trading Tools</strong></a><span class="main__gridEx__option-modification" data-i18n="deep">Deep analytics and charts Automated trading and AI bots API support for PRO traders</span></div>
         </section>
         <section class="main__spot">
-          <div class="main__option"><strong class="main__option word">Spot</strong><br><br>Over <span class="main__option modification">1000+</span> coins available. Buy and sell quickly with automatic calculation of average cost and PnL.<br><br><button class="main__option button" type="button">Learn More</button></div>
-          <div class="main__option"><strong class="main__option word">Futures</strong><br><br>Supports long/short positions with leverage and profit of to <span class="main__option modification">125x </span>from market volatillities.<br><br><button class="main__option button" type="button">Learn More</button></div>
-          <div class="main__option"><strong class="main__option word">Grid Trading</strong><br><br>Create your personal trading strategy and profit <span class="main__option modification">24/7</span> spot and futures grid trading<br><br><button class="main__option button" type="button">Learn More</button></div>
+          <div class="main__option"><strong class="main__option word" data-i18n="spot">Spot</strong><br><br data-i18n="over">Over <span class="main__option modification">1000+</span> coins available. Buy and sell quickly with automatic calculation of average cost and PnL.<br><br><button class="main__option button" type="button" data-i18n="learn">Learn More</button></div>
+          <div class="main__option"><strong class="main__option word" data-i18n="futures">Futures</strong><br><br data-i18n=""supports>Supports long/short positions with leverage and profit of to <span class="main__option modification">125x </span data-i18n="from">from market volatillities.<br><br><button class="main__option button" type="button" data-i18n="learn">Learn More</button></div>
+          <div class="main__option"><strong class="main__option word" data-i18n="grid">Grid Trading</strong><br><br data-i18n="create">Create your personal trading strategy and profit <span class="main__option modification">24/7</span data-i18n="spotss"> spot and futures grid trading<br><br><button class="main__option button" type="button" data-i18n="learn">Learn More</button></div>
         </section>
         <section class="main__telephone">
-          <div class="main__telephone__trade"><strong>Trade Anywhere</strong> <br><strong>with the ExChange</strong></div>
+          <div class="main__telephone__trade"><strong data-i18n="trade">Trade Anywhere</strong> <br><strong data-i18n="with">with the ExChange</strong></div>
           <div class="main__telephone__tel"><img src="./img/telephone.png" alt="telephone" loading="lazy"></div>
         </section>
         <section class="main__leib">
@@ -201,10 +212,10 @@
             </div>
         </section>
         <section class="main__faq">
-            <div class="main__faq__mod"><strong>FAQ</strong><a class="main__faq__mod-more" href="#">More</a></div>
+            <div class="main__faq__mod"><strong data-i18n="faq">FAQ</strong><a class="main__faq__mod-more" href="#" data-i18n="more">More</a></div>
             <div class="faq-item">
               <input type="checkbox" id="sepa" class="submenu-toggle" />
-              <label for="sepa" class="faq-question">How to Buy Crypto via SEPA Bank Transfer& (Web)</label>
+              <label for="sepa" class="faq-question" data-i18n="howto">How to Buy Crypto via SEPA Bank Transfer& (Web)</label>
               <ul class="submenu">
                 <li><a href="#">Web</a></li>
                 <li><a href="#">Web</a></li>
@@ -212,7 +223,7 @@
             </div>
             <div class="faq-item">
               <input type="checkbox" id="card" class="submenu-toggle" />
-              <label for="card" class="faq-question">How to Buy Crypto via SEPA Bank Transfer& (App)</label>
+              <label for="card" class="faq-question" data-i18n="howapp">How to Buy Crypto via SEPA Bank Transfer& (App)</label>
               <ul class="submenu">
                 <li><a href="#">App</a></li>
                 <li><a href="#">App</a></li>
@@ -220,7 +231,7 @@
             </div>
             <div class="faq-item">
               <input type="checkbox" id="card1" class="submenu-toggle" />
-              <label for="card1" class="faq-question">How to Buy Crypto with Credit/Debit Card? (Web)</label>
+              <label for="card1" class="faq-question" data-i18n="howto">How to Buy Crypto with Credit/Debit Card? (Web)</label>
               <ul class="submenu">
                 <li><a href="#">Web</a></li>
                 <li><a href="#">Web</a></li>
@@ -228,7 +239,7 @@
             </div>
             <div class="faq-item">
               <input type="checkbox" id="sepa1" class="submenu-toggle" />
-              <label for="sepa1" class="faq-question">How to Buy Crypto with Credit/Debit Card? (App)</label>
+              <label for="sepa1" class="faq-question" data-i18n="howapp">How to Buy Crypto with Credit/Debit Card? (App)</label>
               <ul class="submenu">
                 <li><a href="#">App</a></li>
                 <li><a href="#">App</a></li>
@@ -241,84 +252,84 @@
           LOGO <br><p>&copy; 2023-2025 ExChange.COM. Всі права захищені.</p>
         </section>
         <section class="footer__grid">
-          <div class="footer__grid__m"><strong>About</strong><br><a href="#" class="href">About Us</a><br><a href="#" class="href">Terms of Service</a><br><a href="#" class="href">Privacy Notice</a><br><a href="#" class="href">Risk Warning</a><br><a href="#" class="href">BioFin App</a></div>
-          <div class="footer__grid__m"><strong>Products</strong><br><a href="#" class="href">Buy Crypto</a><br><a href="#" class="href">Trade</a><br><a href="#" class="href">Spot Trading</a><br><a href="#" class="href">Trading Bots</a><br><a href="#" class="href">Copy Trading</a><br><a href="#" class="href">Earn</a><br><a href="#" class="href">Rewards Hub</a><br><a href="#" class="href">Academy</a><br><a href="#" class="href">News</a></div>
-          <div class="footer__grid__m"><strong>Trade</strong><br><a href="#" class="href">BTC USDT</a><br><a href="#" class="href">ETH USDT</a><br><a href="#" class="href">DOGE USDT</a><br><a href="#" class="href">SOL USDT</a><br><a href="#" class="href">XRP USDT</a><br><a href="#" class="href">Crypto Price</a><br><a href="#" class="href">Bitcoin Price</a><br><a href="#" class="href">XRP Price</a></div>
-          <div class="footer__grid__m"><strong>Support</strong><br><a href="#" class="href">Support Center</a><br><a href="#" class="href">Free Schedule</a><br><a href="#" class="href">Official Verification</a><br><strong>Service</strong><br><a href="#" class="href">Referal</a><br><a href="#" class="href">Market Data</a><br><a href="#" class="href">APIs</a></div>
-          <div class="footer__grid__m"><strong>Trade anywhere with ExChange</strong><br><button class="footer__grid__m-modificationButton" type="button">Register</button></div>
+          <div class="footer__grid__m"><strong data-i18n="about">About</strong><br><a href="#" class="href" data-i18n="aboutus">About Us</a><br><a href="#" class="href" data-i18n="terms">Terms of Service</a><br><a href="#" class="href" data-i18n="privacy">Privacy Notice</a><br><a href="#" class="href" data-i18n="risk">Risk Warning</a><br><a href="#" class="href" data-i18n="biofin">BioFin App</a></div>
+          <div class="footer__grid__m"><strong data-i18n="products">Products</strong><br><a href="#" class="href" data-i18n="crypto">Buy Crypto</a><br><a href="#" class="href" data-i18n="trades">Trade</a><br><a href="#" class="href" data-i18n="spot">Spot Trading</a><br><a href="#" class="href" data-i18n="tradings">Trading Bots</a><br><a href="#" class="href" data-i18n="copy">Copy Trading</a><br><a href="#" class="href" data-i18n="earn">Earn</a><br><a href="#" class="href" data-i18n="rewards">Rewards Hub</a><br><a href="#" class="href" data-i18n="academy">Academy</a><br><a href="#" class="href" data-i18n="news">News</a></div>
+          <div class="footer__grid__m"><strong data-i18n="trades">Trade</strong><br><a href="#" class="href">BTC USDT</a><br><a href="#" class="href">ETH USDT</a><br><a href="#" class="href">DOGE USDT</a><br><a href="#" class="href">SOL USDT</a><br><a href="#" class="href">XRP USDT</a><br><a href="#" class="href" data-i18n="price">Crypto Price</a><br><a href="#" class="href" data-i18n="bitcoin">Bitcoin Price</a><br><a href="#" class="href" data-i18n="xrp">XRP Price</a></div>
+          <div class="footer__grid__m"><strong data-i18n="support">Support</strong><br><a href="#" class="href" data-i18n="center">Support Center</a><br><a href="#" class="href" data-i18n="free">Free Schedule</a><br><a href="#" class="href" data-i18n="official">Official Verification</a><br><strong data-i18n="service">Service</strong><br><a href="#" class="href" data-i18n="referal">Referal</a><br><a href="#" class="href" data-i18n="data">Market Data</a><br><a href="#" class="href">APIs</a></div>
+          <div class="footer__grid__m"><strong data-i18n="anywhere">Trade anywhere with ExChange</strong><br><button class="footer__grid__m-modificationButton" type="button" data-i18n="register">Register</button></div>
         </section>
       </footer>
     </div>
     <script>
-    const select = document.getElementById('lang-select');
+      const select = document.getElementById('lang-select');
 
-    function loadLang(lang) {
-      fetch(`lang/${lang}.json`)
-        .then(res => {
-          if (!res.ok) throw new Error("Language file not found");
-          return res.json();
-        })
-        .then(data => {
-          document.documentElement.lang = lang;
+      function loadLang(lang) {
+        fetch(`lang/${lang}.json`)
+          .then(res => {
+            if (!res.ok) throw new Error("Language file not found");
+            return res.json();
+          })
+          .then(data => {
+            document.documentElement.lang = lang;
 
-          // Текст
-          document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.dataset.i18n;
-            if (data[key]) {
-              if (el.tagName === 'TITLE') {
-                document.title = data[key];
-              } else {
-                el.textContent = data[key];
+            // Текст
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+              const key = el.dataset.i18n;
+              if (data[key]) {
+                if (el.tagName === 'TITLE') {
+                  document.title = data[key];
+                } else {
+                  el.textContent = data[key];
+                }
               }
-            }
-          });
+            });
 
-          // placeholder
-          document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const key = el.dataset.i18nPlaceholder;
-            if (data[key]) el.placeholder = data[key];
-          });
+            // placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+              const key = el.dataset.i18nPlaceholder;
+              if (data[key]) el.placeholder = data[key];
+            });
 
-          // alt
-          document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-            const key = el.dataset.i18nAlt;
-            if (data[key]) el.alt = data[key];
-          });
+            // alt
+            document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+              const key = el.dataset.i18nAlt;
+              if (data[key]) el.alt = data[key];
+            });
 
-          // value
-          document.querySelectorAll('[data-i18n-value]').forEach(el => {
-            const key = el.dataset.i18nValue;
-            if (data[key]) el.value = data[key];
-          });
+            // value
+            document.querySelectorAll('[data-i18n-value]').forEach(el => {
+              const key = el.dataset.i18nValue;
+              if (data[key]) el.value = data[key];
+            });
 
-          // href
-          document.querySelectorAll('[data-i18n-href]').forEach(el => {
-            const key = el.dataset.i18nHref;
-            if (data[key]) el.href = data[key];
-          });
-        })
-        .catch(err => console.error('Error loading language file:', err));
-    }
+            // href
+            document.querySelectorAll('[data-i18n-href]').forEach(el => {
+              const key = el.dataset.i18nHref;
+              if (data[key]) el.href = data[key];
+            });
+          })
+          .catch(err => console.error('Error loading language file:', err));
+      }
 
-    function detectLang() {
-      const saved = localStorage.getItem('lang');
-      if (saved) return saved;
+      function detectLang() {
+        const saved = localStorage.getItem('lang');
+        if (saved) return saved;
 
-      const browserLang = navigator.language.slice(0, 2);
-      const supported = ['ua', 'en'];
-      return supported.includes(browserLang) ? browserLang : 'ua';
-    }
+        const browserLang = navigator.language.slice(0, 2);
+        const supported = ['ua', 'en'];
+        return supported.includes(browserLang) ? browserLang : 'ua';
+      }
 
-    const currentLang = detectLang();
-    select.value = currentLang;
-    loadLang(currentLang);
-    localStorage.setItem('lang', currentLang);
+      const currentLang = detectLang();
+      select.value = currentLang;
+      loadLang(currentLang);
+      localStorage.setItem('lang', currentLang);
 
-    select.addEventListener('change', () => {
-      const lang = select.value;
-      localStorage.setItem('lang', lang);
-      loadLang(lang);
-    });
+      select.addEventListener('change', () => {
+        const lang = select.value;
+        localStorage.setItem('lang', lang);
+        loadLang(lang);
+      });
   </script>
   </body>
 </html>

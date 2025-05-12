@@ -202,18 +202,28 @@ body {
         @media (max-width: 439px) {
           body .header__right__button {
             display: none; } }
-      body .header__right__iconEarth {
-        min-width: 24px;
-        min-height: 24px;
-        transition: transform 0.3 ease; }
-        @media (max-width: 463px) {
-          body .header__right__iconEarth {
-            min-width: 15px;
-            min-height: 15px;
-            transition: transform 0.3 ease; } }
-        body .header__right__iconEarth:hover {
-          padding-top: 1px;
-          transform: scale(1.2); }
+      body .header__right__lang-selector {
+        position: relative; }
+        body .header__right__lang-selector select {
+          font-size: 0.9rem;
+          font-family: var(--font-family-base);
+          background-color: var(--colorEight);
+          color: var(--colorFive);
+          border-radius: 5px;
+          max-width: 70px;
+          max-height: 40px;
+          width: 100%;
+          cursor: pointer; }
+          body .header__right__lang-selector select:hover {
+            background-color: var(--colorFive);
+            color: var(--colorEight); }
+          body .header__right__lang-selector select option {
+            background-color: var(--colorFive);
+            color: var(--colorEight); }
+          @media (max-width: 463px) {
+            body .header__right__lang-selector select {
+              font-size: 0.6rem;
+              padding: 5px 8px; } }
       body .header__right__iconSun {
         min-width: 24px;
         min-height: 24px;
@@ -806,7 +816,10 @@ body {
         color: var(--colorOne);
         font-size: 1rem;
         margin-top: auto;
-        font-family: var(--font-family-base); }
+        font-family: var(--font-family-base);
+        transition: color; }
+        body .main__option .button:hover {
+          color: var(--colorEight); }
     body .main__telephone {
       margin-top: 100px;
       order: 10;
