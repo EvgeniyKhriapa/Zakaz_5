@@ -295,12 +295,12 @@ body {
       &__iconSun {
         min-width: 24px;
         min-height: 24px;
-        transition: transform 0.3 ease;
+        transition: transform 0.3s ease;
 
         @media (max-width: 463px) {
           min-width: 15px;
           min-height: 15px;
-          transition: transform 0.3 ease;
+          transition: transform 0.3s ease;
         }
 
         &:hover {

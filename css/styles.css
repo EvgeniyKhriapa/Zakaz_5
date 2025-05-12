@@ -227,12 +227,12 @@ body {
       body .header__right__iconSun {
         min-width: 24px;
         min-height: 24px;
-        transition: transform 0.3 ease; }
+        transition: transform 0.3s ease; }
         @media (max-width: 463px) {
           body .header__right__iconSun {
             min-width: 15px;
             min-height: 15px;
-            transition: transform 0.3 ease; } }
+            transition: transform 0.3s ease; } }
         body .header__right__iconSun:hover {
           padding-top: 1px;
           transform: scale(1.2); }
