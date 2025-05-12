@@ -127,13 +127,13 @@ body {
               aspect-ratio: 1;
               min-width: 24px;
               z-index: 4;
-              background: url("../icons/icon1.png") center/contain no-repeat; }
+              background: url("../icons/icon1.webp") center/contain no-repeat; }
             body .header__left__menu .dropdown-content .dropdown-item:hover {
               color: var(--colorEight); }
             body .header__left__menu .dropdown-content .dropdown-item:nth-child(2)::after {
-              background: url("../icons/icon2.png") center/contain no-repeat; }
+              background: url("../icons/icon2.webp") center/contain no-repeat; }
             body .header__left__menu .dropdown-content .dropdown-item:nth-child(3)::after {
-              background: url("../icons/icon3.png") center/contain no-repeat; }
+              background: url("../icons/icon3.webp") center/contain no-repeat; }
           body .header__left__menu .dropdown-content-text {
             color: var(--colorTen);
             font-size: 0.8rem;
@@ -146,7 +146,7 @@ body {
           aspect-ratio: 1;
           min-width: 10px;
           z-index: 5;
-          background: url("../icons/vector.png") center/contain no-repeat; }
+          background: url("../icons/vector.webp") center/contain no-repeat; }
         body .header__left__menu .dropbtn:hover::after {
           content: "";
           position: absolute;
@@ -156,7 +156,7 @@ body {
           min-width: 10px;
           z-index: 5;
           transform: rotate(180deg);
-          background: url("../icons/vector2.png") center/contain no-repeat; }
+          background: url("../icons/vector2.webp") center/contain no-repeat; }
         body .header__left__menu .dropdown-content a {
           position: relative;
           color: var(--colorFive);
@@ -294,13 +294,13 @@ body {
             aspect-ratio: 1;
             min-width: 24px;
             z-index: 4;
-            background: url("../icons/icon1.png") center/contain no-repeat; }
+            background: url("../icons/icon1.webp") center/contain no-repeat; }
           body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:hover {
             color: var(--colorEight); }
           body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:nth-child(2)::after {
-            background: url("../icons/icon2.png") center/contain no-repeat; }
+            background: url("../icons/icon2.webp") center/contain no-repeat; }
           body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:nth-child(3)::after {
-            background: url("../icons/icon3.png") center/contain no-repeat; }
+            background: url("../icons/icon3.webp") center/contain no-repeat; }
         body .header__displayNone .dropdowns-content__displayNone-text {
           color: grey;
           font-size: 0.8rem;
@@ -313,7 +313,7 @@ body {
         aspect-ratio: 1;
         min-width: 10px;
         z-index: 5;
-        background: url("../icons/vector.png") center/contain no-repeat; }
+        background: url("../icons/vector.webp") center/contain no-repeat; }
       body .header__displayNone .dropbtns__displayNone:hover::after {
         content: "";
         position: absolute;
@@ -323,7 +323,7 @@ body {
         min-width: 10px;
         z-index: 5;
         transform: rotate(180deg);
-        background: url("../icons/vector2.png") center/contain no-repeat; }
+        background: url("../icons/vector2.webp") center/contain no-repeat; }
       body .header__displayNone .dropdowns-content__displayNone a {
         position: relative;
         color: var(--colorFive);
@@ -595,15 +595,15 @@ body {
                 top: 25%;
                 left: -11%; } }
           body .main__markets__table-row__contract.n1::before {
-            background: url("../icons/market1.png") center/contain no-repeat; }
+            background: url("../icons/market1.webp") center/contain no-repeat; }
           body .main__markets__table-row__contract.n2::before {
-            background: url("../icons/market2.png") center/contain no-repeat; }
+            background: url("../icons/market2.webp") center/contain no-repeat; }
           body .main__markets__table-row__contract.n3::before {
-            background: url("../icons/market3.png") center/contain no-repeat; }
+            background: url("../icons/market3.webp") center/contain no-repeat; }
           body .main__markets__table-row__contract.n4::before {
-            background: url("../icons/market4.png") center/contain no-repeat; }
+            background: url("../icons/market4.webp") center/contain no-repeat; }
           body .main__markets__table-row__contract.n5::before {
-            background: url("../icons/market5.png") center/contain no-repeat; }
+            background: url("../icons/market5.webp") center/contain no-repeat; }
         @media (max-width: 753px) {
           body .main__markets__table-row {
             font-size: 0.8rem; } }
@@ -737,21 +737,21 @@ body {
               height: 28px;
               aspect-ratio: 1; } }
         body .main__gridEx__option.n1::before {
-          background: url("../icons/exchange1.png") center/contain no-repeat; }
+          background: url("../icons/exchange1.webp") center/contain no-repeat; }
         body .main__gridEx__option.n2::before {
-          background: url("../icons/exchange2.png") center/contain no-repeat; }
+          background: url("../icons/exchange2.webp") center/contain no-repeat; }
         body .main__gridEx__option.n3::before {
-          background: url("../icons/exchange3.png") center/contain no-repeat; }
+          background: url("../icons/exchange3.webp") center/contain no-repeat; }
         body .main__gridEx__option.n4::before {
-          background: url("../icons/exchange4.png") center/contain no-repeat; }
+          background: url("../icons/exchange4.webp") center/contain no-repeat; }
         body .main__gridEx__option.n5::before {
-          background: url("../icons/exchange5.png") center/contain no-repeat; }
+          background: url("../icons/exchange5.webp") center/contain no-repeat; }
         body .main__gridEx__option.n6::before {
-          background: url("../icons/exchange6.png") center/contain no-repeat; }
+          background: url("../icons/exchange6.webp") center/contain no-repeat; }
         body .main__gridEx__option.n7::before {
-          background: url("../icons/exchange7.png") center/contain no-repeat; }
+          background: url("../icons/exchange7.webp") center/contain no-repeat; }
         body .main__gridEx__option.n8::before {
-          background: url("../icons/exchange8.png") center/contain no-repeat; }
+          background: url("../icons/exchange8.webp") center/contain no-repeat; }
         body .main__gridEx__option-modification {
           display: flex;
           justify-items: center;

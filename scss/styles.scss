@@ -151,18 +151,18 @@ body {
               aspect-ratio: 1;
               min-width: 24px;
               z-index: 4;
-              background: url('../icons/icon1.png') center/contain no-repeat;
+              background: url('../icons/icon1.webp') center/contain no-repeat;
             }
             &:hover {
               color: var(--colorEight);
             }
 
             &:nth-child(2)::after {
-              background: url('../icons/icon2.png') center/contain no-repeat;
+              background: url('../icons/icon2.webp') center/contain no-repeat;
             }
             
             &:nth-child(3)::after {
-              background: url('../icons/icon3.png') center/contain no-repeat;
+              background: url('../icons/icon3.webp') center/contain no-repeat;
             }
           }
           &-text {
@@ -179,7 +179,7 @@ body {
           aspect-ratio: 1;
           min-width: 10px;
           z-index: 5;
-          background: url('../icons/vector.png') center/contain no-repeat;
+          background: url('../icons/vector.webp') center/contain no-repeat;
         }
 
         .dropbtn:hover::after {
@@ -191,7 +191,7 @@ body {
           min-width: 10px;
           z-index: 5;
           transform: rotate(180deg);
-          background: url('../icons/vector2.png') center/contain no-repeat;
+          background: url('../icons/vector2.webp') center/contain no-repeat;
         }
 
         .dropdown-content a {
@@ -382,18 +382,18 @@ body {
             aspect-ratio: 1;
             min-width: 24px;
             z-index: 4;
-            background: url('../icons/icon1.png') center/contain no-repeat;
+            background: url('../icons/icon1.webp') center/contain no-repeat;
           }
           &:hover {
             color: var(--colorEight);
           }
 
           &:nth-child(2)::after {
-            background: url('../icons/icon2.png') center/contain no-repeat;
+            background: url('../icons/icon2.webp') center/contain no-repeat;
           }
           
           &:nth-child(3)::after {
-            background: url('../icons/icon3.png') center/contain no-repeat;
+            background: url('../icons/icon3.webp') center/contain no-repeat;
           }
         }
         &-text {
@@ -410,7 +410,7 @@ body {
         aspect-ratio: 1;
         min-width: 10px;
         z-index: 5;
-        background: url('../icons/vector.png') center/contain no-repeat;
+        background: url('../icons/vector.webp') center/contain no-repeat;
       }
 
       .dropbtns__displayNone:hover::after {
@@ -422,7 +422,7 @@ body {
         min-width: 10px;
         z-index: 5;
         transform: rotate(180deg);
-        background: url('../icons/vector2.png') center/contain no-repeat;
+        background: url('../icons/vector2.webp') center/contain no-repeat;
       }
 
       .dropdowns-content__displayNone a {
@@ -771,23 +771,23 @@ body {
         }
 
           &.n1::before {
-            background: url('../icons/market1.png') center/contain no-repeat;
+            background: url('../icons/market1.webp') center/contain no-repeat;
           }
 
           &.n2::before {
-            background: url('../icons/market2.png') center/contain no-repeat;
+            background: url('../icons/market2.webp') center/contain no-repeat;
           }
 
           &.n3::before {
-            background: url('../icons/market3.png') center/contain no-repeat;
+            background: url('../icons/market3.webp') center/contain no-repeat;
           }
 
           &.n4::before {
-            background: url('../icons/market4.png') center/contain no-repeat;
+            background: url('../icons/market4.webp') center/contain no-repeat;
           }
 
           &.n5::before {
-            background: url('../icons/market5.png') center/contain no-repeat;
+            background: url('../icons/market5.webp') center/contain no-repeat;
           }
         }
 
@@ -959,35 +959,35 @@ body {
         }
         
         &.n1::before {
-          background: url('../icons/exchange1.png') center/contain no-repeat;
+          background: url('../icons/exchange1.webp') center/contain no-repeat;
         }
 
         &.n2::before {
-          background: url('../icons/exchange2.png') center/contain no-repeat;
+          background: url('../icons/exchange2.webp') center/contain no-repeat;
         }
 
         &.n3::before {
-          background: url('../icons/exchange3.png') center/contain no-repeat;
+          background: url('../icons/exchange3.webp') center/contain no-repeat;
         }
 
         &.n4::before {
-          background: url('../icons/exchange4.png') center/contain no-repeat;
+          background: url('../icons/exchange4.webp') center/contain no-repeat;
         }
 
         &.n5::before {
-          background: url('../icons/exchange5.png') center/contain no-repeat;
+          background: url('../icons/exchange5.webp') center/contain no-repeat;
         }
 
         &.n6::before {
-          background: url('../icons/exchange6.png') center/contain no-repeat;
+          background: url('../icons/exchange6.webp') center/contain no-repeat;
         }
 
         &.n7::before {
-          background: url('../icons/exchange7.png') center/contain no-repeat;
+          background: url('../icons/exchange7.webp') center/contain no-repeat;
         }
 
         &.n8::before {
-          background: url('../icons/exchange8.png') center/contain no-repeat;
+          background: url('../icons/exchange8.webp') center/contain no-repeat;
         }
 
         &-modification {
