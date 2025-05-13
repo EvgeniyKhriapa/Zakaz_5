@@ -135,6 +135,7 @@ body {
             body .header__left__menu .dropdown-content .dropdown-item:nth-child(3)::after {
               background: url("../icons/icon3.webp") center/contain no-repeat; }
           body .header__left__menu .dropdown-content-text {
+            display: block;
             color: var(--colorTen);
             font-size: 0.8rem;
             font-family: var(--font-family-base); }
@@ -236,7 +237,7 @@ body {
         body .header__right__iconSun:hover {
           padding-top: 1px;
           transform: scale(1.2); }
-    body .header__displayNone {
+    body .header__displayNones {
       display: flex;
       flex-wrap: wrap;
       font-size: 0.9rem;
@@ -244,26 +245,26 @@ body {
       transition: color;
       cursor: pointer;
       white-space: nowrap; }
-      body .header__displayNone__menu {
+      body .header__displayNones__menus {
         margin-right: 24px; }
-      body .header__displayNone__menu:hover {
+      body .header__displayNones__menus:hover {
         color: var(--colorEight); }
-      body .header__displayNone .dropbtns__displayNone {
+      body .header__displayNones .dropbtnss__displayNones {
         background-color: var(--colorFour);
         color: var(--colorTwo);
         font-size: 0.9rem;
         border: none; }
-        body .header__displayNone .dropbtns__displayNone:hover {
+        body .header__displayNones .dropbtnss__displayNones:hover {
           color: var(--colorEight); }
-      body .header__displayNone .dropdowns__displayNone {
+      body .header__displayNones .dropdownss__displayNones {
         position: relative;
         display: inline-block;
         font-family: var(--font-family-base); }
-        body .header__displayNone .dropdowns__displayNone:hover .dropdowns-content__displayNone {
+        body .header__displayNones .dropdownss__displayNones:hover .dropdownss-contents__displayNones {
           opacity: 1;
           visibility: visible;
           transition-delay: 0s; }
-      body .header__displayNone .dropdowns-content__displayNone {
+      body .header__displayNones .dropdownss-contents__displayNones {
         display: block;
         opacity: 0;
         visibility: hidden;
@@ -275,18 +276,17 @@ body {
         min-width: 360px;
         min-height: 271px;
         z-index: 1;
-        border-radius: 3%;
         transition: background-color, opacity 0.3s ease, visibility 0s linear 2.3s; }
         @media (max-width: 700px) {
-          body .header__displayNone .dropdowns-content__displayNone {
-            min-width: 160px;
+          body .header__displayNones .dropdownss-contents__displayNones {
+            max-width: 160px;
             width: auto;
             max-height: none;
             left: 0; } }
-        body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone {
+        body .header__displayNones .dropdownss-contents__displayNones .dropdownss-items__displayNones {
           position: relative;
           padding-left: 70px; }
-          body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone::after {
+          body .header__displayNones .dropdownss-contents__displayNones .dropdownss-items__displayNones::after {
             content: "";
             position: absolute;
             top: 25%;
@@ -295,17 +295,21 @@ body {
             min-width: 24px;
             z-index: 4;
             background: url("../icons/icon1.webp") center/contain no-repeat; }
-          body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:hover {
+          body .header__displayNones .dropdownss-contents__displayNones .dropdownss-items__displayNones:hover {
             color: var(--colorEight); }
-          body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:nth-child(2)::after {
+          body .header__displayNones .dropdownss-contents__displayNones .dropdownss-items__displayNones:nth-child(2)::after {
             background: url("../icons/icon2.webp") center/contain no-repeat; }
-          body .header__displayNone .dropdowns-content__displayNone .dropdowns-item__displayNone:nth-child(3)::after {
+          body .header__displayNones .dropdownss-contents__displayNones .dropdownss-items__displayNones:nth-child(3)::after {
             background: url("../icons/icon3.webp") center/contain no-repeat; }
-        body .header__displayNone .dropdowns-content__displayNone-text {
+        body .header__displayNones .dropdownss-contents__displayNones-texts {
+          display: block;
           color: grey;
           font-size: 0.8rem;
           font-family: var(--font-family-base); }
-      body .header__displayNone .dropbtn::after {
+          @media (max-width: 500px) {
+            body .header__displayNones .dropdownss-contents__displayNones-texts {
+              font-size: 0.6rem; } }
+      body .header__displayNones .dropbtnss::after {
         content: "";
         position: absolute;
         top: 30%;
@@ -314,7 +318,7 @@ body {
         min-width: 10px;
         z-index: 5;
         background: url("../icons/vector.webp") center/contain no-repeat; }
-      body .header__displayNone .dropbtns__displayNone:hover::after {
+      body .header__displayNones .dropbtnsss__displayNones:hover::after {
         content: "";
         position: absolute;
         top: 30%;
@@ -324,18 +328,18 @@ body {
         z-index: 5;
         transform: rotate(180deg);
         background: url("../icons/vector2.webp") center/contain no-repeat; }
-      body .header__displayNone .dropdowns-content__displayNone a {
+      body .header__displayNones .dropdownss-contents__displayNones a {
         position: relative;
         color: var(--colorFive);
         padding: 12px 16px;
         text-decoration: none;
         display: block; }
-      body .header__displayNone .dropdowns-content__displayNone a:hover {
+      body .header__displayNones .dropdownss-contents__displayNones a:hover {
         background-color: var(--colorOne); }
-      body .header__displayNone .dropdowns__displayNone:hover .dropdowns-content__displayNone {
+      body .header__displayNones .dropdownss__displayNones:hover .dropdownss-contents__displayNones {
         display: block; }
       @media (min-width: 927px) {
-        body .header__displayNone {
+        body .header__displayNones {
           display: none; } }
   body .main {
     position: relative;
