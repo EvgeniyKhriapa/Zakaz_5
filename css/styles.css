@@ -727,10 +727,10 @@ body {
         @media (max-width: 648px) {
           body .main__gridEx__option {
             font-size: 0.6rem; } }
-        @media (max-width: 425px) {
+        @media (max-width: 500px) {
           body .main__gridEx__option {
             font-size: 0.4rem;
-            margin-top: 50px; } }
+            margin-top: 40px; } }
         body .main__gridEx__option::before {
           content: "";
           position: absolute;
